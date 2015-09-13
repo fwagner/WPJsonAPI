@@ -15,6 +15,7 @@ public protocol WPJOAuth2LoginViewControllerDelegate : NSObjectProtocol {
     */
     func didCompleteLogin(viewController : WPJOAuth2LoginViewController, user : WPJUser);
     func didFailLogin(viewController : WPJOAuth2LoginViewController, error : NSError);
+    func didCancelLogin(viewController: WPJOAuth2LoginViewController);
 }
 
 public class WPJOAuth2LoginViewController: UIViewController, WKNavigationDelegate {
@@ -114,7 +115,7 @@ public class WPJOAuth2LoginViewController: UIViewController, WKNavigationDelegat
     
     
     @objc private func didTapCancel() {
-        self.delegate?.didCompleteLogin(self);
+        self.delegate?.didCancelLogin(self);
         self.dismissViewControllerAnimated(true) {};
     }
 

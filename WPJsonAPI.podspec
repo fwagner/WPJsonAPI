@@ -17,19 +17,14 @@ Pod::Spec.new do |s|
 
   s.name         = "WPJsonAPI"
   s.version      = "0.0.1"
-  s.summary      = "A short description of WPJsonAPI."
+  s.summary      = "Implementation of the Wordpress.com JSON API in Swift."
 
   s.description  = <<-DESC
-                   A longer description of WPJsonAPI in Markdown format.
+                   An implementation of the Wordpress.com JSON API in Swift.
 
-                   * Think: Why did you write this? What is the focus? What does it do?
-                   * CocoaPods will be using this to generate tags, and improve search results.
-                   * Try to keep it short, snappy and to the point.
-                   * Finally, don't worry about the indent, CocoaPods strips it!
                    DESC
 
   s.homepage     = "https://github.com/fwagner/WPJsonAPI"
-  # s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
 
 
   # ―――  Spec License  ――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -53,7 +48,7 @@ Pod::Spec.new do |s|
   #
 
   s.author             = "Florian Wagner"
-  # s.social_media_url   = "http://twitter.com/"
+  s.social_media_url   = "http://twitter.com/flowagner"
 
   # ――― Platform Specifics ――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
   #
@@ -70,7 +65,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/fwagner/WPJsonAPI.git", :tag => "0.0.1" }
+  s.source       = { :git => "https://github.com/fwagner/WPJsonAPI.git" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -81,7 +76,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = "WPJsonAPI"
+  s.source_files  = "Source/**/*.{swift,m,h}"
 
 
   # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
